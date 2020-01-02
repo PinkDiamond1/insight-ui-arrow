@@ -65,7 +65,7 @@ angular.module('insight.currency').controller('CurrencyController',
       if (currency === 'USD') {
         Currency.get({}, function(res) {
           $rootScope.currency.factor = res.data.rate;
-          $rootScope.currency.realSymbol = res.data.short;
+          $rootScope.currency.realSymbol = 'ARW';
         });
       } else if (currency === 'mARW') {
         $rootScope.currency.factor = 1000;
@@ -79,7 +79,7 @@ angular.module('insight.currency').controller('CurrencyController',
     // Get initial value
     Currency.get({}, function(res) {
       $rootScope.currency.factor = res.data.rate;
-      $rootScope.currency.realSymbol = res.data.short;
+      $rootScope.currency.realSymbol = 'ARW';
     });
 
   });
