@@ -17,9 +17,9 @@ angular.module('insight.system').controller('HeaderController',
     }, {
 	  'title': 'Statistics',
       'link': 'stats'
-	}, {
-	  'title': 'Rich List',
-      'link': 'rich-list'
+	// }, {
+	//   'title': 'Rich List',
+  //     'link': 'rich-list'
 	}, {
 	  'title': 'Pools',
       'link': 'pools'
