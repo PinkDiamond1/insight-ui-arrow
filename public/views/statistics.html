@@ -72,11 +72,11 @@
 						</tr>
 						<tr>
 							<td translate>Arrow Mined:</td>
-							<td class="text-right">{{ $root.currency.getConvertion(SC.statsTotal24.mined_currency_amount / 100000000) }}</td>
+							<td class="text-right">{{ $root.currency.getConvertion(SC.statsTotal24.mined_currency_amount / 100000) }}</td>
 						</tr>
 						<tr>
 							<td translate>Total Circulating Supply:</td>
-							<td class="text-right">{{ ($root.currency.getConvertion(SC.statsTotal24.mined_currency_amount / 100000000) - SC.totalsupply) | numeraljs : '0,0' }} ARW&nbsp;<a href="/charts" class="btn-copy" translate>View Chart</a></td>
+							<td class="text-right">{{ ((SC.statsTotal24.mined_currency_amount / 100000) - SC.totalsupply) | numeraljs : '0,0' }} ARW&nbsp;<a href="/charts" class="btn-copy" translate>View Chart</a></td>
 						</tr>
 					</tbody>
 				</table>
