@@ -127,11 +127,11 @@
 						<td class="text-left">{{ SC.statsTotal24.number_of_transactions }}</td>
 						<td class="text-right"><a href="stats/transactions/60" class="btn-copy" translate>View Chart</a></td>
 					</tr>
-					<tr>
+					<!-- <tr>
 						<td translate>Total Output Volume:</td>
 						<td class="text-left">{{ $root.currency.getConvertion(SC.statsTotal24.outputs_volume / 100000000) }}</td>
 						<td class="text-right"><a href="stats/outputs/60" class="btn-copy" translate>View Chart</a></td>
-					</tr>
+					</tr> -->
 				</tbody>
 			</table>
 		</div>
@@ -151,7 +151,7 @@
 					</tr>
 					<tr>
 						<td translate>Current Network Hashrate</td>
-						<td class="text-left">{{ SC.networkhashps / 1000 | numeraljs : '0,0.000' }} kH/s</td>
+						<td class="text-left">{{ SC.networkhashps / 1000 | numeraljs : '0,0.000' }} KSols/s</td>
 						<td class="text-right"><a href="stats/nethash/60" class="btn-copy" translate>View Chart</a></td>
 					</tr>
 				</tbody>
