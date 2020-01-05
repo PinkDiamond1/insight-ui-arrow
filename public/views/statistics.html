@@ -58,7 +58,7 @@
 		<div class="col-xs-12 col-md-66 col-gray">
 			<div class="section section-stats">
 				<div class="section__heading">
-					<h2 class="section__title" translate>Block Summary</h2>
+					<h2 class="section__title" translate>24 Hour Block Summary</h2>
 				</div>
 				<table class="table table-hover">
 					<tbody>
@@ -72,11 +72,11 @@
 						</tr>
 						<tr>
 							<td translate>Arrow Mined:</td>
-							<td class="text-right">{{ $root.currency.getConvertion(SC.statsTotal24.mined_currency_amount / 100000) }}</td>
+							<td class="text-right">{{ $root.currency.getConvertion(SC.statsTotal24.mined_currency_amount / 100000000) }}</td>
 						</tr>
 						<tr>
 							<td translate>Total Circulating Supply:</td>
-							<td class="text-right">{{ ((SC.statsTotal24.mined_currency_amount / 100000) - SC.totalsupply) | numeraljs : '0,0' }} ARW&nbsp;<a href="/charts" class="btn-copy" translate>View Chart</a></td>
+							<td class="text-right">{{ SC.totalsupply | numeraljs : '0,0' }} ARW&nbsp;<a href="/charts" class="btn-copy" translate>View Chart</a></td>
 						</tr>
 					</tbody>
 				</table>
